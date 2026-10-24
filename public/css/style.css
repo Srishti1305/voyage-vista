@@ -335,6 +335,7 @@ body {
     flex-direction: column
   }
 }
+
 #authNav {
   display: flex;
   align-items: center;
@@ -347,4 +348,19 @@ body {
 
 .navlinks a {
   white-space: nowrap
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 22px 0 14px
+}
+
+.filters select {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 15px;
+  background: white
 }

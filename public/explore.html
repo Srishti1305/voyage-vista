@@ -17,7 +17,19 @@
     <h2>Explore destinations</h2>
     <form class="search" id="searchForm" style="box-shadow:0 5px 20px #0001"><input id="search"
         placeholder="Search destination, city or state"><button class="btn">Search</button></form>
-    <div style="height:30px"></div>
+    <div class="filters">
+      <select id="category">
+        <option value="">All categories</option>
+      </select>
+      <select id="budget">
+        <option value="">Any budget</option>
+        <option value="low">Under $150</option>
+        <option value="mid">$150 – $200</option>
+        <option value="high">Above $200</option>
+      </select>
+      <button type="button" class="btn secondary" id="clearFilters">Clear</button>
+    </div>
+    <p id="count" class="muted"></p>
     <div class="grid" id="grid"></div>
   </main>
   <script src="js/common.js"></script>
