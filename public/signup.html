@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sign Up | VoyageVista</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="nav"><a class="logo" href="index.html">VoyageVista</a></nav>
+  <main class="auth-wrap">
+    <form class="form-card" data-mode="register">
+      <h2>Create account</h2>
+      <p class="muted">Start saving and planning journeys.</p>
+      <div id="notice" class="notice"></div>
+      <div class="field"><label>Name</label><input name="name" required></div>
+      <div class="field"><label>Email</label><input type="email" name="email" required></div>
+      <div class="field"><label>Password</label><input type="password" name="password" minlength="6" required></div>
+      <button class="btn" style="width:100%">Sign Up</button>
+      <p>Already registered? <a href="login.html" style="color:#0f766e">Login</a></p>
+    </form>
+  </main>
+  <script src="js/auth.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+
+</html>

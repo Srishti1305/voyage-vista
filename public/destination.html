@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Destination | VoyageVista</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="nav"><a class="logo" href="index.html">VoyageVista</a>
+    <div class="navlinks"><a href="explore.html">Explore</a><a href="trip-planner.html">Trip Planner</a><span
+        id="authNav"></span></div>
+  </nav>
+  <header class="detail-hero" id="hero">
+    <div>
+      <h1 id="name"></h1>
+      <p id="location"></p>
+    </div>
+  </header>
+  <main class="section two-col">
+    <section class="panel">
+      <h2>About</h2>
+      <p id="desc"></p>
+      <div id="meta"></div>
+      <h3>Top attractions</h3>
+      <ul id="attractions"></ul><button class="btn secondary" onclick="favorite()">♡ Save destination</button>
+    </section>
+    <aside class="panel">
+      <h2>Plan & book</h2>
+      <p class="muted">VoyageVista doesn't process tickets. Continue to the booking provider.</p>
+      <div class="booking-links"><a class="btn" target="_blank" rel="noopener" href="https://www.irctc.co.in/">Book
+          Train — IRCTC</a><a class="btn secondary" target="_blank" rel="noopener"
+          href="https://www.airindia.com/">Search Flights</a><a class="btn secondary" target="_blank" rel="noopener"
+          href="https://www.booking.com/">Find Hotels</a><a class="btn" href="trip-planner.html">Create a Trip</a></div>
+    </aside>
+  </main>
+  <script src="js/common.js"></script>
+  <script src="js/destination.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+
+</html>

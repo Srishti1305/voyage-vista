@@ -1,0 +1,1 @@
+const r=require('express').Router(),c=require('../controllers/favoriteController'),auth=require('../middleware/authMiddleware');r.get('/',auth,c.mine);r.post('/:destinationId',auth,c.toggle);module.exports=r;

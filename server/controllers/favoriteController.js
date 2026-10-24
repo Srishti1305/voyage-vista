@@ -1,0 +1,3 @@
+const db=require('../config/db');
+exports.toggle=async(req,res)=>{const id=req.params.destinationId;try{const [x]=await db.query('SELECT id FROM favorites WHERE user_id=? AND destination_id=?',[req.user.id,id]);if(x.length){await db.query('DELETE FROM favorites WHERE id=?',[x[0].id]);return res.json({favorite:false});}await db.query('INSERT INTO favorites(user_id,destination_id) VALUES(?,?)',[req.user.id,id]);res.json({favorite:true});}catch(e){res.status(500).json({message:'Could not update favorite'});}};
+exports.mine=async(req,res)=>{try{const [r]=await db.query('SELECT d.* FROM favorites f JOIN destinations d ON d.id=f.destination_id WHERE f.user_id=?',[req.user.id]);res.json(r);}catch(e){res.status(500).json({message:'Could not load favorites'});}};

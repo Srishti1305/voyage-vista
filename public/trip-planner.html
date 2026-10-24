@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trip Planner | VoyageVista</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="nav"><a class="logo" href="index.html">VoyageVista</a>
+    <div class="navlinks"><a href="explore.html">Explore</a><span id="authNav"></span></div>
+  </nav>
+  <main class="auth-wrap">
+    <form class="form-card">
+      <h2>Plan a trip</h2>
+      <div class="field"><label>Destination</label><select name="destination_id" id="destination" required></select>
+      </div>
+      <div class="field"><label>Start date</label><input type="date" name="start_date" required></div>
+      <div class="field"><label>Number of days</label><input type="number" min="1" max="30" name="days" required></div>
+      <div class="field"><label>Budget</label><select name="budget">
+          <option>Budget</option>
+          <option>Moderate</option>
+          <option>Premium</option>
+        </select></div>
+      <div class="field"><label>Interests</label><label><input type="checkbox" name="interest" value="History">
+          History</label> <label><input type="checkbox" name="interest" value="Food"> Food</label> <label><input
+            type="checkbox" name="interest" value="Nature"> Nature</label> <label><input type="checkbox" name="interest"
+            value="Adventure"> Adventure</label></div><button class="btn" style="width:100%">Save Trip</button>
+    </form>
+  </main>
+  <script src="js/common.js"></script>
+  <script src="js/trip.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+
+</html>
